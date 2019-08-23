@@ -1,0 +1,17 @@
+<h3>MYC10</h3>
+<p>用户姓名：{{userName}}</p>
+<p>用户的年龄：{{userAge}}</p>
+<p>用户明年的年龄：{{userAge+1}}</p>
+<!-- <p>用户明年的年龄2：{{userAge++}}</p> -->
+<p>用户成年了吗？{{userAge>=18}}</p>
+<p>用户在工作年龄范围内？{{ userAge>=18 && userAge<60 }}</p>
+<p>用户是否为成年人？{{userAge>=18 ? '是' : '否'}}</p>
+<p>用户姓名的纯大写形式：{{userName.toUpperCase() }}</p>
+<p>用户姓名中的字符个数：{{userName.length}}</p>
+<!-- <p>当前系统时间：{{new Date().getTime()}}</p> -->
+
+<img src="../../assets/pic.jpg" title="C盘里找的风景画">
+<img [src]="imgSrc" [title]="imgTitle">
+<img src="{{imgSrc}}" title="{{imgTitle}}">
+<hr>
+<button (click)="doClick()">弹出Hello</button>
